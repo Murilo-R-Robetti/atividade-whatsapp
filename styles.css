@@ -1,53 +1,136 @@
-.container{
-    width: 100%;
-    min-height: 100vh;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #31ca20;
+    background-color: #18c006;
 }
-.caixa{
-    padding: 20px;
+
+#geraLink{
     background-color: white;
-    max-width: 550px;
-    width: 90%;
+    width: 380px;
+    height: 190px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.numTel {
-    height: 40px;
-    width: calc(100% - 20px); 
-    margin-bottom: 10px;
-    padding: 0 10px;
-    border: solid black 2px;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-.input-wrapper {
-    width: 100%;
+
+button{
+    background-color: #18c006;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    pointer-events: none;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-.linkIcone, .iconeAviao {
+
+#geraLink input{
+    border-radius: 8px;
+    border: 1.5px solid black;
+    width: 220px;
     height: 50px;
+    padding: 0 0 0 8px;
+    font-size: 13px;
+}
+
+h2{
+    padding: 15px 0 0 0;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#iconeWhatsapp{
     width: 50px;
-    margin-left: 10px;
-    border: 2px solid black;
-    border-radius: 4px;
-    background-color: rgb(0, 255, 98);
+    padding: 0 0 0 10px;
 }
-h1 img {
-    width: 30px;
-    height: 30px;
-    margin-left: 5px;
+
+#caixa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 23px 0 8px 0;
 }
-@media only screen and (max-width: 768px) {
-    .caixa {
-        max-width: 90%;
+
+.material-icons{
+    color: white;
+}
+
+p{
+    font-size: 10px;
+    padding: 8px 0 0 0;
+    display: none;
+}
+
+#link{
+    width: 320px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 5px;
+    user-select: none;
+    padding: 2px 5px;
+    display: none;
+}
+
+#botaoLink{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 767px){
+    #geraLink{
+        width: 320px;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
     }
-    .numTel {
-        width: calc(100% - 20px);
+
+    #caixa{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 260px;
+        height: 100px;
+        padding: 0;
     }
+    
+    button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+    }
+
+    #link{
+        width: 260px;
+    }
+
+    p{
+        padding: 0;
+    }
+
+    #geraLink input{
+        width: 260px;
+    }
+
 }

@@ -1,24 +1,27 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
-    <title>Gerador De Link Whatsapp</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="./scripts.js" defer></script>
+    <title>Gerador de link WhatsApp</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
 <body>
-    <div class="container">
-        <div class="caixa">
-            <h1>Gerador De Link Whatsapp <img src="whatsapp.svg" style="width: 30px; height: 30px;"></h1>
-            <div class="input-wrapper">
-                <input type="text" placeholder="Numero de Telefone" class="numTel">
-                <button class="linkIcone"><i class="fas fa-link"></i></button>
-                <button class="iconeAviao"><i class="fas  fa-paper-plane"></i></button>
+    <div id="container">
+        <div id="geraLink">
+            <h2>Gerador de link <img id="iconeWhatsapp" src="whatsapp.svg"></h2>
+            <div id="caixa">
+                <input placeholder="Telefone" id="numTel" maxlength="15" >
+                <button id="geradordesktop"><span class="material-icons">link</span></button>
+                <a id="botaoLink">
+                <button id="linkdesktop"><span class="material-icons">send</span></button></a>
             </div>
+            <div id="link"></div>
+            <p id="clickCopiar">Clique no link para copiar</p>
         </div>
-    </div>
+    </div>  
 </body>
-</html>
-<!-- -- ><a aria-label="Chat on WhatsApp" href="https://wa.me/1XXXXXXXXXX"><img alt="Link Disponível"><a />
